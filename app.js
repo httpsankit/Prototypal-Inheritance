@@ -1,4 +1,3 @@
-
 function array(){
     Object.defineProperty(this,"length",{
         value:0,
@@ -33,18 +32,17 @@ array.prototype.top=function(){              ////top function
 
 array.prototype.printReverse=function() ///////////reverse function 
 {
-    var arr2=Object.values(this)
-    var arr3=[];
-    for(var i=arr2.length-1;i>=0;i--)       //// use for loop
+    var new_array=Object.values(this)
+    var new_array_2=[];
+    for(var i=new_array.length-1;i>=0;i--)       //// use for loop
     {
-        arr3.push(arr2[i])         ///// pushing data to the array 
+        new_array_2.push(new_array[i])         ///// pushing data to the array 
     }
-    console.log(arr3)
+    console.log(new_array_2)
 }
 array.prototype.print=function(){                ////print function 
     console.log(Object.values(this))
 }
-
 array.prototype.size=function(){  ///////finding the size of the array 
     console.log(this.length)
 }
